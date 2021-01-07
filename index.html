@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Nath Tiwari</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar_left">
+            <a href="#home" class="logo_bigscreen">Ankit</a>
+            <a class="logo_smallscreen" onclick="openNav()"><img src="./icons/Group 69.svg" alt="menu_icon" height="30px" width="20px"></a>
+        </div>
+        <div class="navbar_right">
+            <div> <a href="#aboutme"> About </a></div>
+            <div> <a href="#skills"> Skills </a> </div>
+            <div> <a href="#contact"> Contact </a> </div>
+        </div>
+    </div>
+
+    <div class="sidebar" id="mySidenav">
+        <a href="" onclick="closeNav()">Close</a>
+        <a href="#aboutme"> About </a>
+        <a href="#skills"> Skills </a> 
+        <a href="#contact"> Contact </a> 
+    </div>
+    <div class="main_content">
+        <div class="home" id="home">
+            <div>
+                <h1>Hi, I am Ankit</h1>
+            </div>
+            <div>
+                <p>
+                    A web designer and developer from New Delhi, India. 
+                    I create websites to help people go online.
+                </p>
+            </div>
+        </div>
+        <div class="aboutme" id="aboutme">
+            <div>
+                <h1>About Me</h1>
+            </div>
+            <div>
+            <p>
+                Hello! I am Ankit Tiwari, a web devloper based in New Delhi, India.
+                I  am working on projects for clients all over the world. I have a diverse
+                set of skills ranging from design (Adobe XD) to HTML, CSS, JavaScript, 
+                Node.js etc. 
+
+                Professionally connected with the web development industry for many years. 
+                Well-organised person, problem solver, independent employee with high
+                attention to detail.
+                
+                Interested in the entire frontend and backend spectrum and 
+                working on ambitious projects with positive people.
+            </p>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <div>
+                <h1>Skills</h1>
+            </div>
+            <div>
+                <p>Here are a few technologies I've been working with recently :</p>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>Express.js</li>
+                    <li>HTML & CSS</li>
+                    <li>MongoDB</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aboutme" id="contact">
+                <div> <h1>Contact</h1></div>
+                <div>
+                    <p>Email: ankitfounder@gmail.com</p>
+                    <p>Phone: +91 7791059913</p>
+                </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

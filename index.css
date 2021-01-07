@@ -1,0 +1,159 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar {
+  width: 0px;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #06d4b5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #222222;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: #222222;
+  color: #06d4b5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar_left {
+  margin: auto 8%;
+  display: flex;
+  font-size: max(1.5vw, 20px);
+  flex: 1;
+}
+
+.navbar_left a {
+  text-decoration: none;
+  color: #06d4b5;
+}
+
+.logo_smallscreen {
+  display: none;
+}
+.navbar_right {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10vw;
+  font-size: max(1.5vw, 20px);
+}
+.navbar_right div a {
+  text-decoration: none;
+  color: #06d4b5;
+  padding: 10px;
+  margin-right: 10px;
+}
+.navbar_right div a:hover {
+  text-decoration: none;
+  color: #08fdd8;
+}
+
+.home {
+  background-color: #222222;
+  color: #06d4b5;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.home div {
+  margin-left: 8vw;
+  max-width: 40vw;
+}
+.home div h1 {
+  font-size: max(5vw, 25px);
+  margin-top: 25vh;
+  color: #08fdd8;
+}
+.home div p {
+  font-size: max(1.5vw, 15px);
+  margin: 0px;
+}
+
+.aboutme {
+  background-color: #222222;
+  color: #06d4b5;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+.aboutme div {
+  margin-left: 50vw;
+  max-width: 40vw;
+}
+
+.aboutme div h1 {
+  margin-top: 18vh;
+  font-size: max(5vw, 25px);
+  color: #08fdd8;
+}
+
+.aboutme div p {
+  font-size: max(1.5vw, 10px);
+  margin: 0px;
+}
+.skills {
+  background-color: #222222;
+  color: #06d4b5;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.skills div {
+  margin-left: 8vw;
+}
+.skills div h1 {
+  margin-top: 18vh;
+  font-size: max(5vw, 25px);
+  color: #08fdd8;
+}
+.skills div p {
+  font-size: max(1.5vw, 10px);
+  margin: 0px;
+}
+.skills div ul {
+  padding-left: 2%;
+}
+
+@media only screen and (max-width: 650px) {
+  .logo_bigscreen {
+    display: none;
+  }
+  .logo_smallscreen {
+    display: block;
+  }
+  .navbar_right {
+    display: none;
+  }
+  .home div {
+    max-width: 90vw;
+  }
+  .aboutme div {
+    margin-left: 8vw;
+    max-width: 90vw;
+  }
+}
